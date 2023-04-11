@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Odd or Even</title>
+</head>
+<body>
+    <h3>Enter the number to check whether it is odd or even.</h3>
+    <input id="userInput" type="number">
+    <button onclick="myFunction()">Enter</button>
+    <span id="oddeven"></span>
+    <script>
+        function myFunction(){
+            var a = document.getElementById("userInput").value;
+            var b = a%2;
+            if (b == 0){
+                document.getElementById("oddeven").innerHTML = "The number " + a + " is an even number"
+            }
+            else{
+                document.getElementById("oddeven").innerHTML = "The number " + a + " is an odd number"
+            };
+        };
+    </script>
+</body>
+</html>
